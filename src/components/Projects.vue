@@ -1,5 +1,5 @@
 <template>
-  <section class="py-16 px-4 bg-gray-100 dark:bg-gray-900 transition-colors duration-500">
+  <section id="projects" class="py-16 px-4 bg-gray-100 dark:bg-gray-900 transition-colors duration-500">
     <div class="max-w-7xl mx-auto text-center">
       <h2 class="text-4xl font-bold mb-10 text-gray-900 dark:text-white">My Projects</h2>
       <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

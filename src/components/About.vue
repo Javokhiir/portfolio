@@ -1,5 +1,5 @@
 <template>
-  <section class="py-16 px-4 bg-gray-100 dark:bg-gray-900 transition-colors duration-500">
+   <section id="about" class="py-16 px-4 bg-gray-100 dark:bg-gray-900 transition-colors duration-500">
     <div class="max-w-6xl mx-auto">
       <!-- About Card -->
       <div
@@ -14,6 +14,7 @@
           />
         </div>
 
+        <!-- Text Side -->
         <div class="md:w-2/3 text-center md:text-left">
           <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
           <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -22,89 +23,78 @@
           <p class="mt-4 text-gray-600 dark:text-gray-400">
             Outside of coding, I enjoy photography, learning new technologies, and taking part in space missions 🚀.
           </p>
+          <blockquote class="mt-8 italic text-gray-600 dark:text-gray-400">
+            "Code is like humor. When you have to explain it, it’s bad."
+          </blockquote>
         </div>
       </div>
-
-      <!-- Creative Skills Section -->
-      <div class="mt-12 bg-white/80 dark:bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-8">
-        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 text-center">My Skills</h2>
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
-          <!-- Skill Card 1 -->
-          <div class="relative group text-center">
-            <div class="w-40 h-40 rounded-full bg-gradient-to-r from-blue-400 via-indigo-500 to-blue-600 mx-auto mb-4 shadow-lg overflow-hidden">
-              <div class="absolute inset-0 bg-white opacity-20 animate-pulse rounded-full"></div>
-              <div class="relative z-10 text-white text-4xl font-semibold">JS</div>
-            </div>
-            <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">JavaScript</h3>
-            <div class="mt-4 flex justify-center items-center">
-              <div class="w-2/3 h-2 bg-gray-300 rounded-full">
-                <div class="h-2 bg-blue-500 rounded-full w-3/4"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Skill Card 2 -->
-          <div class="relative group text-center">
-            <div class="w-40 h-40 rounded-full bg-gradient-to-r from-green-400 via-teal-500 to-green-600 mx-auto mb-4 shadow-lg overflow-hidden">
-              <div class="absolute inset-0 bg-white opacity-20 animate-pulse rounded-full"></div>
-              <div class="relative z-10 text-white text-4xl font-semibold">Vue</div>
-            </div>
-            <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">Vue.js</h3>
-            <div class="mt-4 flex justify-center items-center">
-              <div class="w-2/3 h-2 bg-gray-300 rounded-full">
-                <div class="h-2 bg-green-500 rounded-full w-3/4"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Skill Card 3 -->
-          <div class="relative group text-center">
-            <div class="w-40 h-40 rounded-full bg-gradient-to-r from-teal-400 via-cyan-500 to-teal-600 mx-auto mb-4 shadow-lg overflow-hidden">
-              <div class="absolute inset-0 bg-white opacity-20 animate-pulse rounded-full"></div>
-              <div class="relative z-10 text-white text-4xl font-semibold">Tail</div>
-            </div>
-            <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">Tailwind CSS</h3>
-            <div class="mt-4 flex justify-center items-center">
-              <div class="w-2/3 h-2 bg-gray-300 rounded-full">
-                <div class="h-2 bg-teal-500 rounded-full w-5/6"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Skill Card 4 -->
-          <div class="relative group text-center">
-            <div class="w-40 h-40 rounded-full bg-gradient-to-r from-red-400 via-orange-500 to-red-600 mx-auto mb-4 shadow-lg overflow-hidden">
-              <div class="absolute inset-0 bg-white opacity-20 animate-pulse rounded-full"></div>
-              <div class="relative z-10 text-white text-4xl font-semibold">Node</div>
-            </div>
-            <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">Node.js</h3>
-            <div class="mt-4 flex justify-center items-center">
-              <div class="w-2/3 h-2 bg-gray-300 rounded-full">
-                <div class="h-2 bg-red-500 rounded-full w-2/3"></div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Skill Card 5 -->
-          <div class="relative group text-center">
-            <div class="w-40 h-40 rounded-full bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 mx-auto mb-4 shadow-lg overflow-hidden">
-              <div class="absolute inset-0 bg-white opacity-20 animate-pulse rounded-full"></div>
-              <div class="relative z-10 text-white text-4xl font-semibold">Git</div>
-            </div>
-            <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">Git</h3>
-            <div class="mt-4 flex justify-center items-center">
-              <div class="w-2/3 h-2 bg-gray-300 rounded-full">
-                <div class="h-2 bg-yellow-500 rounded-full w-4/5"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <blockquote class="mt-8 italic text-gray-600 dark:text-gray-400">
-        "Code is like humor. When you have to explain it, it’s bad."
-      </blockquote>
     </div>
+    <!-- Skills Table Section -->
+    <div class="mt-12 bg-white/80 dark:bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-8">
+      <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6 text-center">My Skills</h2>
+
+      <div class="space-y-6">
+        <div>
+          <div class="flex justify-between mb-1">
+            <span class="text-gray-800 dark:text-white font-medium">Vue.js</span>
+            <span class="text-gray-600 dark:text-gray-300 text-sm">85%</span>
+          </div>
+          <div class="w-full h-2 bg-gray-300 rounded-full">
+            <div class="h-2 bg-green-500 rounded-full w-[85%]"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between mb-1">
+            <span class="text-gray-800 dark:text-white font-medium">Tailwind CSS</span>
+            <span class="text-gray-600 dark:text-gray-300 text-sm">90%</span>
+          </div>
+          <div class="w-full h-2 bg-gray-300 rounded-full">
+            <div class="h-2 bg-cyan-500 rounded-full w-[90%]"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between mb-1">
+            <span class="text-gray-800 dark:text-white font-medium">Nuxt.js</span>
+            <span class="text-gray-600 dark:text-gray-300 text-sm">80%</span>
+          </div>
+          <div class="w-full h-2 bg-gray-300 rounded-full">
+            <div class="h-2 bg-indigo-500 rounded-full w-[80%]"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between mb-1">
+            <span class="text-gray-800 dark:text-white font-medium">HTML5</span>
+            <span class="text-gray-600 dark:text-gray-300 text-sm">95%</span>
+          </div>
+          <div class="w-full h-2 bg-gray-300 rounded-full">
+            <div class="h-2 bg-orange-500 rounded-full w-[95%]"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between mb-1">
+            <span class="text-gray-800 dark:text-white font-medium">JavaScript</span>
+            <span class="text-gray-600 dark:text-gray-300 text-sm">85%</span>
+          </div>
+          <div class="w-full h-2 bg-gray-300 rounded-full">
+            <div class="h-2 bg-yellow-500 rounded-full w-[85%]"></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between mb-1">
+            <span class="text-gray-800 dark:text-white font-medium">Git</span>
+            <span class="text-gray-600 dark:text-gray-300 text-sm">80%</span>
+          </div>
+          <div class="w-full h-2 bg-gray-300 rounded-full">
+            <div class="h-2 bg-amber-500 rounded-full w-[80%]"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </section>
 </template>

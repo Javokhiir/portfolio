@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-cover bg-center md:bg-blend-overlay h-[90vh] md:h-[100vh] text-white" style="background-image: url('/javohir.png')">
+  <div class="relative bg-cover bg-center md:bg-blend-overlay h-[100vh] md:h-[100vh] text-white" style="background-image: url('/javohir.png')">
     <div class="absolute inset-0 bg-black bg-opacity-40"></div>
     <div class="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4">
       <div class="fade-in">

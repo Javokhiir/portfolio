@@ -1,5 +1,5 @@
 <template>
-  <section class="py-20 px-4 bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-gray-800 transition-colors duration-500 relative overflow-hidden">
+  <section id="contact" class="py-20 px-4 bg-gradient-to-br from-gray-100 to-white dark:from-gray-900 dark:to-gray-800 transition-colors duration-500 relative overflow-hidden">
     <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 relative z-10">
       <!-- Left content -->
       <div class="flex flex-col justify-center">
