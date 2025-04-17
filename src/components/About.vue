@@ -1,11 +1,9 @@
 <template>
    <section id="about" class="py-16 px-4 bg-gray-100 dark:bg-gray-900 transition-colors duration-500">
     <div class="max-w-6xl mx-auto">
-      <!-- About Card -->
       <div
           class="rounded-2xl shadow-xl p-8 md:flex items-center gap-10 bg-white/80 dark:bg-white/10 backdrop-blur-md transition-all duration-500 hover:scale-[1.01]"
       >
-        <!-- Image Side -->
         <div class="flex justify-center md:w-1/3 mb-8 md:mb-0 group">
           <img
               src="/aboutPic.png"
@@ -14,7 +12,6 @@
           />
         </div>
 
-        <!-- Text Side -->
         <div class="md:w-2/3 text-center md:text-left">
           <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-4">About Me</h2>
           <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">

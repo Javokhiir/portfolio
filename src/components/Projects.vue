@@ -50,7 +50,7 @@ const projects = [
     id: 1,
     title: 'Green Light ELD',
     description: 'Platform offers a comprehensive suite of tools crafted for trucking companies and owner-operators.',
-    image: '/gle.png',
+    image: '/GLE.png',
     techStack: ['Vue.js', 'Tailwind CSS', 'Nuxt Js'],
     live: 'https://greenlighteld.com/',
     github: 'https://github.com/Javokhiir',
