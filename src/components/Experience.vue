@@ -57,13 +57,13 @@ const experiences = [
   {
     role: 'Real Estate Visual Creator',
     company: 'Prime Haven Properties',
-    period: '2022 - 2023',
+    period: '2024',
     description: 'Captured and edited mobile videos and photos for premium property listings.',
   },
   {
     role: 'Vue.js Intern',
     company: 'Open Source Community',
-    period: '2021 - 2022',
+    period: '2024 - 2025',
     description: 'Contributed to component libraries and gained hands-on experience in frontend dev.',
   },
   {
@@ -73,10 +73,10 @@ const experiences = [
     description: 'Registered for an experimental suborbital mission to explore new frontiers.',
   },
   {
-    role: 'Creative Portfolio Builder',
+    role: 'Creative WebSite Builder',
     company: 'Personal',
-    period: '2023 - 2024',
-    description: 'Designed and built a dark/light mode creative portfolio using Vue 3 and Tailwind.',
+    period: '2024 - 2025',
+    description: 'Designed and built a creative Websites using Vue 3 and Tailwind.',
   },
 ]
 </script>

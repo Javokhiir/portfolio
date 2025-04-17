@@ -1,5 +1,5 @@
 <template>
-  <div class="relative bg-cover bg-center md:bg-blend-overlay h-[100vh] md:h-[100vh] text-white" style="background-image: url('/javohir.png')">
+  <div class="relative bg-cover bg-center md:bg-blend-overlay h-[100vh] md:h-[100vh] text-white" style=" background-image: url('/javohir.png'); background-attachment: fixed;">
     <div class="absolute inset-0 bg-black bg-opacity-40"></div>
     <div class="absolute inset-0 flex flex-col items-center justify-center text-center z-10 px-4">
       <div class="fade-in">
@@ -10,7 +10,7 @@
           Building innovative software solutions with no boundaries. Let's create something amazing together!
         </p>
         <button class="mt-8 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg transition duration-300">
-          See My Work
+          <a href="#projects">See My Work</a>
         </button>
         <div class="flex gap-6 mt-8">
           <a href="https://t.me/Shaxriyorov_J" target="_blank" class="text-white hover:text-blue-400">

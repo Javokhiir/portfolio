@@ -12,6 +12,20 @@
           <p><span class="font-semibold text-blue-600 dark:text-blue-400">Phone:</span> +998 77 022 27 50</p>
           <p><span class="font-semibold text-blue-600 dark:text-blue-400">Location:</span> Tashkent, Uzbekistan</p>
         </div>
+        <div class="flex gap-6 mt-8">
+          <a href="https://t.me/Shaxriyorov_J" target="_blank" class="text-gray-400 hover:text-blue-400">
+            <Icon icon="akar-icons:telegram-fill" class="w-6 h-6" />
+          </a>
+          <a href="https://www.instagram.com/Javohir_shaxriyorov" target="_blank" class="text-gray-400 hover:text-blue-400">
+            <Icon icon="brandico:instagram" class="w-6 h-6" />
+          </a>
+          <a href="https://www.linkedin.com/in/javohir-shaxriyorov-b23146309/" target="_blank" class="text-gray-400 hover:text-blue-400">
+            <Icon icon="fa-brands:linkedin" class="w-6 h-6" />
+          </a>
+          <a href="https://github.com/Javokhiir" target="_blank" class="text-gray-400 hover:text-blue-400">
+            <Icon icon="fa-brands:github" class="w-6 h-6" />
+          </a>
+        </div>
       </div>
 
       <!-- Contact form -->
@@ -94,6 +108,7 @@ import { ref } from 'vue'
 import { toast } from 'vue3-toastify'
 import 'vue3-toastify/dist/index.css'
 import SwipeVerify from "./SwipeVerify.vue";
+import {Icon} from "@iconify/vue";
 
 const isVerified = ref(false)
 const name = ref('')
