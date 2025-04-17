@@ -1,15 +1,15 @@
 <template>
   <section id="projects" class="py-16 px-4 bg-gray-100 dark:bg-gray-900 transition-colors duration-500">
-    <div class="max-w-7xl mx-auto text-center">
+    <div class="max-w-7xl mx-auto text-center ">
       <h2 class="text-4xl font-bold mb-10 text-gray-900 dark:text-white">My Projects</h2>
-      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 ">
         <div
             v-for="project in projects"
             :key="project.id"
-            class="bg-white/80 dark:bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-300"
+            class="bg-white/80 dark:bg-white/10 backdrop-blur-md rounded-xl overflow-hidden shadow-lg hover:shadow-2xl hover:scale-[1.02] transition ease-in-out duration-500"
         >
           <img :src="project.image" :alt="project.title" class="w-full h-48 object-cover" />
-          <div class="p-6 text-left">
+          <div class="p-6 text-left ">
             <h3 class="text-2xl font-semibold mb-2 text-gray-800 dark:text-white">{{ project.title }}</h3>
             <p class="text-gray-600 dark:text-gray-300 mb-4">{{ project.description }}</p>
             <div class="flex flex-wrap gap-2 mb-4">
