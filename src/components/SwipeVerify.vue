@@ -5,16 +5,16 @@
 
     <!-- Blur trail -->
     <div v-if="dragging" :style="{ left: `0px`, width: `${handleLeft + handleWidth / 2}px` }"
-         class="absolute h-full bg-blue-400/40 blur-md z-0 transition-all"></div>
+         class="absolute h-full bg-blue-400/70 blur-md z-0 transition-all"></div>
 
     <!-- Swipe handle -->
     <div ref="handle"
-         class="absolute top-0 z-10 w-10 h-full flex items-center justify-center cursor-pointer"
+         class="absolute top-0 z-10 w-10 h-full flex items-center justify-center cursor-pointer rounded-full"
+         :class="['transition-all duration-300', { 'animate-bounce': !verified }]"
          :style="{ left: `${handleLeft}px`, backgroundColor: verified ? '#4ade80' : '#3b82f6' }"
          @mousedown="startDrag"
-         @touchstart="startDrag"
-         :class="['transition-all duration-300 rounded-full']">
-      <svg viewBox="0 0 20 20" fill="white" class="w-5 h-5 transform -rotate-90">
+         @touchstart="startDrag">
+      <svg viewBox="20 20 0 00" fill="white" class="w-5 h-5 transform -rotate-90">
         <path d="M10 0L0 20H20L10 0Z" />
       </svg>
     </div>
@@ -34,7 +34,7 @@ const handle = ref(null)
 const dragging = ref(false)
 const verified = ref(false)
 const handleLeft = ref(0)
-const handleWidth = 40 // px
+const handleWidth = 41
 
 let containerWidth = 0
 let startX = 0
@@ -81,3 +81,21 @@ onMounted(() => {
   containerWidth = handle.value.parentElement.offsetWidth
 })
 </script>
+
+<style scoped>
+@keyframes bounce {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px); /* Slight shift */
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.animate-bounce {
+  animation: bounce 1.4s infinite;
+}
+</style>

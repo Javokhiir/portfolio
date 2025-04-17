@@ -66,6 +66,10 @@
           <p v-if="messageError" class="text-red-500 text-sm mt-1">{{ messageError }}</p>
         </div>
 
+        <p class="text-sm text-gray-700 dark:text-gray-300 mt-4">
+          Verify you are not a robot:
+        </p>
+
         <SwipeVerify @verified="isVerified = true" />
 
         <button
