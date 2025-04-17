@@ -14,9 +14,14 @@
           v-if="isOpen"
           class="fixed bottom-20 right-6 w-80 bg-white dark:bg-zinc-800 rounded-2xl shadow-2xl border border-zinc-200 dark:border-zinc-700 z-50 overflow-hidden"
       >
-        <div class="p-4 border-b border-zinc-200 dark:border-zinc-700 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold">
-          Ask Javohir 🤖
+        <div class="p-4 border-b border-zinc-200 dark:border-zinc-700 bg-gradient-to-r from-indigo-500 to-purple-600 text-white font-semibold block items-center">
+          <span>Ask Javohir 🤖</span>
+          <span class="flex items-center text-sm font-normal text-lime-300">
+    <span class="w-2 h-2 rounded-full bg-lime-400 animate-pulse mr-1"></span>
+    Online
+  </span>
         </div>
+
 
         <div class="p-4 max-h-72 overflow-y-auto space-y-3 text-sm">
           <div v-for="(msg, index) in messages" :key="index" class="flex" :class="msg.from === 'user' ? 'justify-end' : 'justify-start'">
