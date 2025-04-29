@@ -1,6 +1,6 @@
 <template>
   <div class="font-sans text-gray-800 dark:text-white bg-white dark:bg-gray-900 transition-all">
-    <Navbar v-if="$route.name !== 'NotFound'" />
+    <Navbar v-if="$route.name !== 'NotFound' && $route.name !== 'SeeMyWork'" />
     <router-view />
   </div>
 </template>

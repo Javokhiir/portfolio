@@ -90,7 +90,6 @@ import { SunIcon, MoonIcon, Bars3Icon, XMarkIcon } from "@heroicons/vue/24/solid
 const isDark = ref(false)
 const isMenuOpen = ref(false)
 
-// Sahifa yuklanganda, oldingi rejimni tekshirish
 onMounted(() => {
   if (localStorage.getItem('darkMode') === 'true') {
     isDark.value = true

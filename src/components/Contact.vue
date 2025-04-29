@@ -8,8 +8,12 @@
           Whether it's a quick chat or a serious collab — I’m always open. Fill the form or ping me on my socials below.
         </p>
         <div class="space-y-3 text-gray-700 dark:text-gray-300">
-          <p><span class="font-semibold text-blue-600 dark:text-blue-400">Email:</span> shahriyorovjavohir@gmail.com</p>
-          <p><span class="font-semibold text-blue-600 dark:text-blue-400">Phone:</span> +998 77 022 27 50</p>
+          <p><span class="font-semibold text-blue-600 dark:text-blue-400" type="email">Email:</span> shahriyorovjavohir@gmail.com</p>
+          <p>
+            <span class="font-semibold text-blue-600 dark:text-blue-400">Phone: </span>
+            <a href="tel:+998770222750">+998 77 022 27 50</a>
+          </p>
+
           <p><span class="font-semibold text-blue-600 dark:text-blue-400">Location:</span> Tashkent, Uzbekistan</p>
         </div>
         <div class="flex gap-6 mt-8">
@@ -53,6 +57,7 @@
           </label>
           <p v-if="emailError" class="text-red-500 text-sm mt-1">{{ emailError }}</p>
         </div>
+
 
         <div class="relative">
           <textarea id="message" v-model="message" rows="4" required

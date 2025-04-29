@@ -9,8 +9,8 @@
         <p class="mt-6 text-lg sm:text-xl lg:text-2xl max-w-3xl mx-auto">
           Building innovative software solutions with no boundaries. Let's create something amazing together!
         </p>
-        <button class="mt-8 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg transition duration-300">
-          <a href="#projects">See My Work</a>
+        <button @click="goToSeeMyWork" class="mt-8 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg text-lg transition duration-300">
+          See my work
         </button>
         <div class="flex gap-6 mt-8">
           <a href="https://t.me/Shaxriyorov_J" target="_blank" class="text-white hover:text-blue-400">
@@ -35,6 +35,13 @@
 <script setup>
 import { ref } from 'vue'
 import { Icon } from '@iconify/vue'
+import {useRouter} from "vue-router";
+
+const router = useRouter()
+const goToSeeMyWork = () => {
+  router.push('/see-my-work')
+}
+
 
 const isVisible = ref(true)
 </script>

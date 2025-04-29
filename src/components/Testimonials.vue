@@ -30,10 +30,13 @@ export default {
       testimonials: [
         {
           id: 1,
-          text: 'This is an amazing service! I highly recommend it.',
-          name: 'John Doe',
+          text: 'Toʻgʻrisi sayt dizayni noodatiy) ranglar ham uygʻunlikda. \n' +
+              'Biror narsa gʻashimga tegmadi.\n' +
+              '\n' +
+              'Oʻzini ishining ustasi qilgani bir qarashda sezilgan.\n',
+          name: 'Gulnigor Ne\'matjon qizi',
           position: 'CEO, CompanyX',
-          image: 'https://randomuser.me/api/portraits/men/1.jpg'
+          image: 'https://randomuser.me/api/portraits/women/72.jpg'
         },
         {
           id: 2,

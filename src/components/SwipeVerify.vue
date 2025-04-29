@@ -13,11 +13,29 @@
          :class="['transition-all duration-300', { 'animate-bounce': !verified }]"
          :style="{ left: `${handleLeft}px`, backgroundColor: verified ? '#4ade80' : '#3b82f6' }"
          @mousedown="startDrag"
-         @touchstart="startDrag">
-      <svg viewBox="20 20 0 00" fill="white" class="w-5 h-5 transform -rotate-90">
-        <path d="M10 0L0 20H20L10 0Z" />
-      </svg>
+         @touchstart="startDrag"
+    >
+      <div class="relative w-5 h-5">
+        <!-- Arrow icon -->
+        <ArrowRightIcon
+            class="absolute inset-0 w-5 h-5 text-white transform transition-all duration-500"
+            :class="{
+        'opacity-0 rotate-180 scale-0': verified,
+        'opacity-100 rotate-0 scale-100': !verified
+      }"
+        />
+        <!-- Check icon -->
+        <CheckIcon
+            class="absolute inset-0 w-5 h-5 text-white transform transition-all duration-500"
+            :class="{
+        'opacity-100 rotate-0 scale-100': verified,
+        'opacity-0 rotate-180 scale-0': !verified
+      }"
+        />
+      </div>
     </div>
+
+
 
     <!-- Label text -->
     <div class="absolute inset-0 flex items-center justify-center text-sm font-medium text-gray-700 dark:text-white pointer-events-none z-0">
@@ -29,6 +47,7 @@
 
 <script setup>
 import { ref, onMounted } from 'vue'
+import { ArrowRightIcon, CheckIcon } from '@heroicons/vue/24/solid'
 
 const handle = ref(null)
 const dragging = ref(false)
@@ -88,7 +107,7 @@ onMounted(() => {
     transform: translateX(0);
   }
   50% {
-    transform: translateX(20px); /* Slight shift */
+    transform: translateX(5px); /* Slight shift */
   }
   100% {
     transform: translateX(0);

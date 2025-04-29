@@ -21,13 +21,12 @@
         <HomeIcon class="w-5 h-5 mr-2" />
         Back to Home
       </router-link>
-      h
     </div>
   </div>
 </template>
 
 <script setup>
-import { HomeIcon, CodeBracketIcon } from '@heroicons/vue/24/outline'
+import { HomeIcon } from '@heroicons/vue/24/outline'
 </script>
 
 <style scoped>
